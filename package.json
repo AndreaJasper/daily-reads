@@ -1,0 +1,23 @@
+{
+  "name": "daily-reads",
+  "version": "1.0.0",
+  "description": "A web scraper",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndreaJasper/daily-reads.git"
+  },
+  "author": "Andrea Jasper",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndreaJasper/daily-reads/issues"
+  },
+  "homepage": "https://github.com/AndreaJasper/daily-reads#readme",
+  "dependencies": {
+    "puppeteer": "^19.6.3"
+  }
+}
