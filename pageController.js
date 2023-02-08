@@ -1,4 +1,5 @@
 const pageScraper = require('./pageScraper');
+const fs = require('fs');
 async function scrapeAll(browserInstance){
 	let browser;
 	try{
@@ -6,7 +7,12 @@ async function scrapeAll(browserInstance){
         let scrapedData = {};
 		scrapedData['Career'] = await pageScraper.scraper(browser, 'Career');
 		await browser.close();
-		console.log(scrapedData)
+		fs.writeFile("data.json", JSON.stringify(scrapedData), 'utf8', function(err) {
+		    if(err) {
+		        return console.log(err);
+		    }
+		    console.log("The data has been scraped and saved successfully! View it at './data.json'");
+		});
 		
 	}
 	catch(err){

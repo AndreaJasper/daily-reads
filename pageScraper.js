@@ -25,7 +25,6 @@ const scraperObject = {
 				let dataObj = {};
 				let newPage = await browser.newPage();
 				await newPage.goto(link);
-				dataObj['articleCategory'] = await newPage.$eval('h6.blog-entry__topic--full a', text => text.textContent);
 				dataObj['articleTitle'] = await newPage.$eval('h1.blog-entry__title--full', text => text.textContent);
 				dataObj['articleAuthor'] = await newPage.$eval('.h3.profile-card__profile-name', text => text.textContent);
 				dataObj['articleDescription'] = await newPage.$eval('.blog-entry--body', text => text.textContent);

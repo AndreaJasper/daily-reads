@@ -1,0 +1,49 @@
+:root {
+    --light-grey: #E2E2E2;
+    --orange: #FFA53B;
+    --pink: #FA0644;
+    --teal: #00C4CC;
+    --purple: #AA02FF;
+    --dark-purple: #6422B8;
+    --yellow: #FFD93B;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.bg-grey {
+    background: var(--light-grey);
+}
+
+.bg-orange {
+    background: var(--orange);
+}
+
+.bg-pink {
+    background: var(--pink);
+}
+
+.bg-teal {
+    background: var(--teal);
+}
+
+.bg-purple {
+    background: var(--purple);
+}
+
+.bg-dk-purple {
+    background: var(--dark-purple);
+}
+
+.bg-yellow {
+    background: var(--yellow);
+}
+
+.logo {
+    font-weight: 300;
+}
+
+  .box {
+    height: 250px;
+  }
