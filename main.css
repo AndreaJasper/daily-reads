@@ -1,7 +1,7 @@
 :root {
     --light-grey: #E2E2E2;
     --orange: #FFA53B;
-    --pink: #FA0644;
+    --pink: #FF738E;
     --teal: #00C4CC;
     --purple: #AA02FF;
     --dark-purple: #6422B8;
@@ -10,6 +10,10 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-family: 'Cedarville Cursive', cursive;
 }
 
 .bg-grey {
@@ -40,10 +44,19 @@ body {
     background: var(--yellow);
 }
 
-.logo {
-    font-weight: 300;
+h6 {
+    font-weight: 100;
 }
 
-  .box {
-    height: 250px;
-  }
+.box {
+height: 250px;
+}
+
+.hero {
+    background-image: url('hero.jpg');
+    background-repeat: none;
+}
+
+.hero h1 {
+    font-size: 62px;
+}
